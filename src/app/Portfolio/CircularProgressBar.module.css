@@ -1,0 +1,60 @@
+.performance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.circularProgressBar {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid #f3f3f3;
+  position: relative;
+}
+
+.progressFill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid #15575c;
+  border-bottom-color: #fff;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease;
+}
+
+.textContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.percentage {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.title {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+@media only screen and (max-width: 600px) {
+  .performance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}

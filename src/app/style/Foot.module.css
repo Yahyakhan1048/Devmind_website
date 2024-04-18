@@ -1,0 +1,129 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 5rem auto;
+}
+.footer_linkss {
+  display: flex;
+  flex-direction: row;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  line-height: 30px;
+  width: 300px;
+}
+
+.item img {
+  margin-bottom: 1rem;
+}
+.item P {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.icons {
+  display: flex;
+  margin-top: 3.5rem;
+  gap: 15px;
+}
+.icn {
+  border-radius: 41px;
+  background: #e0e0e0;
+  box-shadow: 6px 6px 11px #c1c1c1, -6px -6px 11px #ffffff;
+  width: 60px;
+  padding: 20px;
+  height: 60px;
+}
+.icn:hover {
+  color: #fff;
+  background-color: #15575c;
+}
+.item h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.item h1:hover {
+  border-bottom: 2px solid #15575c;
+}
+.item ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+}
+
+.item Link {
+  margin-bottom: 0.5rem;
+}
+
+/* last of container */
+.policy_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #15575c;
+  border: 1px solid #ddd;
+  padding: 2rem 4rem;
+  margin-bottom: 2rem;
+}
+
+.policy_heading_container {
+  color: #fff;
+  font-weight: bold;
+}
+
+.policy_links_container {
+  display: flex;
+  gap: 1rem;
+}
+
+.policy_links_container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 30px;
+  }
+  .footer_linkss {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px;
+    padding: 0;
+  }
+  .item {
+    width: 100%;
+  }
+  .item h1 {
+    text-align: start;
+  }
+  .item ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+  }
+  .policy_container {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15575c;
+    border: 1px solid #ddd;
+    padding: 2rem 4rem;
+    margin-bottom: 2rem;
+  }
+  .policy-links-container {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,69 @@
+.Portfolio_heading {
+  background-image: url("/port.PNG");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 120px;
+  width: 100%;
+  height: 60vh;
+  margin-top: 4.6rem;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.Portfolio_head {
+  font-size: 4.7rem;
+  font-weight: bold;
+}
+.Portfolio_heading:hover {
+  transform: scale(1.05); /* Increase scale on hover */
+}
+
+/* For progress heading */
+/* styles.css */
+
+.progress {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.progress h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 6rem;
+}
+
+.progress p {
+  font-size: 18px;
+  margin-left: 6rem;
+  line-height: 1.6;
+}
+@media only screen and (max-width: 600px) {
+  .Portfolio_heading {
+    padding-top: 90px;
+    width: 100%;
+    height: 30vh;
+    margin-top: 2rem;
+  }
+  .Portfolio_head {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .Portfolio_head p {
+    margin: 0px 30px;
+  }
+  .progress {
+    padding: 10px;
+  }
+
+  .progress h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 40px;
+  }
+
+  .progress p {
+    font-size: 16px;
+    margin-left: 40px;
+  }
+}

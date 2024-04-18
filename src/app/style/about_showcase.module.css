@@ -1,0 +1,161 @@
+.about_heading {
+  background-image: url("/aboutt.PNG");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 70px;
+  width: 100vw;
+  height: 45vh;
+  margin-top: 4.6rem;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.about_head {
+  font-size: 3.3rem;
+  font-weight: bold;
+}
+.about_heading:hover {
+  transform: scale(1.05);
+}
+
+.about_details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9rem;
+  width: 100vw;
+  margin-bottom: 50px;
+}
+
+.content_heading {
+  font-weight: bold;
+  font-size: 3rem;
+  padding-left: 5rem;
+  padding-top: 60px;
+}
+.content_description {
+  padding-left: 5rem;
+  padding-top: 20px;
+}
+.about_image {
+  margin-top: 65px;
+  margin-right: 50px;
+}
+/* TEstominal region */
+.team {
+  background-image: url("/vision.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 70px;
+  width: 100vw;
+  height: 45vh;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.team_text {
+  font-size: 3.1rem;
+  font-weight: bold;
+}
+/* End of testimonial css */
+/* Progress bar Css */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+.content {
+  margin: 10px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+}
+
+.text {
+  margin-right: 20px;
+}
+.text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.progressBars {
+  width: 100%;
+}
+
+.progress {
+  height: 24px;
+  background-color: #000;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.progressbar {
+  height: 100%;
+  background-color: #17575c;
+  border-radius: 8px;
+  color: #fff;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End of prgoress bar */
+@media only screen and (max-width: 679px) {
+  .about_details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .about_head {
+    font-size: 3rem;
+    font-weight: bold;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+  .content_heading {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-top: 30px;
+    width: 100vw;
+    height: 20%;
+  }
+  .content_description {
+    padding-right: 20px;
+    padding-left: 2rem;
+    padding-top: 20px;
+  }
+  .about_image {
+    margin-top: 10px;
+    padding: 2px 20px;
+  }
+  .about_heading {
+    padding: 10px;
+  }
+  .about_content {
+    font-size: 14px;
+  }
+  .content {
+    margin: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 6rem;
+  }
+  .team {
+    width: 100vw;
+    height: 25vh;
+  }
+  .team_text {
+    font-size: 1.5rem;
+  }
+  .team_text p {
+    justify-content: center;
+    padding: 0px 30px;
+  }
+}
